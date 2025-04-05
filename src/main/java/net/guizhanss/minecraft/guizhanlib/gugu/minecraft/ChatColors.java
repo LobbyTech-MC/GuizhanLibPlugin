@@ -125,7 +125,16 @@ public enum ChatColors {
     private final ChatColor color;
     private final String chinese;
 
-    /**
+    ChatColors(ChatColor color, String chinese) {
+		this.color = color;
+		this.chinese = chinese;
+	}
+
+	ChatColor getColor() {
+		return color;
+	}
+
+	/**
      * 根据聊天颜色返回对应的枚举
      *
      * @param chatColor {@link ChatColor} 聊天颜色
@@ -148,7 +157,11 @@ public enum ChatColors {
         return this.getChinese();
     }
 
-    /**
+    String getChinese() {
+		return chinese;
+	}
+
+	/**
      * 获取带颜色代码的颜色名
      *
      * @return 带颜色代码的颜色名

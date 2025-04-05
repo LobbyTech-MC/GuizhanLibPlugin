@@ -42,4 +42,8 @@ public final class ConfigManager {
             plugin.getLogger().info("Updater location is " + updaterLocation + ".");
         }
     }
+
+	public Config getUpdaterConfig() {
+		return updaterConfig;
+	}
 }
