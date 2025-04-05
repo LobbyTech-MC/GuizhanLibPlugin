@@ -45,8 +45,8 @@ dependencies {
 
 java {
     disableAutoTargetJvm()
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
     withJavadocJar()
     withSourcesJar()
 }
@@ -150,5 +150,5 @@ tasks.runServer {
         url("https://builds.guizhanss.com/api/download/ybw0014/GuizhanCraft/master/latest")
     }
     jvmArgs("-Dcom.mojang.eula.agree=true")
-    minecraftVersion("1.20.6")
+    minecraftVersion("1.21.1")
 }
