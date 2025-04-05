@@ -6,19 +6,19 @@ plugins {
     `java-library`
     `maven-publish`
     signing
-    id("io.freefair.lombok") version "8.13.1"
-    id("com.gradleup.shadow") version "8.3.6"
+    id("io.freefair.lombok") version "8.10.2"
+    id("com.gradleup.shadow") version "8.3.3"
     id("net.minecrell.plugin-yml.bukkit") version "0.6.0"
     id("io.github.gradle-nexus.publish-plugin") version "2.0.0"
-    id("xyz.jpenilla.run-paper") version "2.3.1"
 }
 
 repositories {
     mavenCentral()
-    maven("https://jitpack.io/")
-    maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
-    maven("https://repo.papermc.io/repository/maven-public/")
-    maven("https://s01.oss.sonatype.org/content/groups/public/")
+    maven(url = "https://jitpack.io/")
+    maven(url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+    maven(url = "https://papermc.io/repo/repository/maven-public")
+    maven(url = "https://s01.oss.sonatype.org/content/repositories/snapshots/")
+    maven(url = "https://s01.oss.sonatype.org/content/repositories/staging/")
 }
 
 dependencies {
@@ -27,7 +27,7 @@ dependencies {
         testImplementation(dependencyNotation)
     }
 
-    implementation("net.guizhanss:guizhanlib-all:2.3.0")
+    implementation("net.guizhanss:guizhanlib-all:2.1.0")
     implementation("org.bstats:bstats-bukkit:3.1.0")
     implementation("com.google.code.findbugs:jsr305:3.0.2")
     api("com.github.houbb:pinyin:0.4.0")
@@ -36,17 +36,17 @@ dependencies {
     compileOnlyAndTestImplementation("com.github.Slimefun:Slimefun4:RC-37")
 
     // mockbukkit
-    testImplementation("com.github.MockBukkit:MockBukkit:v1.20-SNAPSHOT")
+    testImplementation("com.github.MockBukkit:MockBukkit:c7cc678834")
     // junit
-    testImplementation(platform("org.junit:junit-bom:5.12.1"))
+    testImplementation(platform("org.junit:junit-bom:5.11.2"))
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 java {
-    disableAutoTargetJvm()
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+
     withJavadocJar()
     withSourcesJar()
 }
@@ -140,15 +140,4 @@ bukkit {
     description = "A library plugin for Simplified Chinese Slimefun addons."
     website = "https://github.com/ybw0014/GuizhanLibPlugin"
     depend = listOf("Slimefun")
-}
-
-tasks.runServer {
-    downloadPlugins {
-        // Slimefun
-        url("https://builds.guizhanss.com/api/download/SlimefunGuguProject/Slimefun4/master/latest")
-        // GuizhanCraft for testing convenient
-        url("https://builds.guizhanss.com/api/download/ybw0014/GuizhanCraft/master/latest")
-    }
-    jvmArgs("-Dcom.mojang.eula.agree=true")
-    minecraftVersion("1.20.6")
 }

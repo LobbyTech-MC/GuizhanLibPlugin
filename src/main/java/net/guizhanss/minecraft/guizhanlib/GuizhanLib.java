@@ -4,8 +4,9 @@ import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import lombok.Getter;
 import lombok.experimental.Accessors;
 import net.guizhanss.guizhanlib.slimefun.addon.AbstractAddon;
+import net.guizhanss.guizhanlib.slimefun.addon.Environment;
 import net.guizhanss.minecraft.guizhanlib.config.ConfigManager;
-import net.guizhanss.minecraft.guizhanlib.gugu.localization.MinecraftLocalization;
+import net.guizhanss.minecraft.guizhanlib.gugu.MinecraftLocalization;
 import net.guizhanss.minecraft.guizhanlib.updater.GuizhanUpdater;
 import net.guizhanss.minecraft.guizhanlib.updater.universal.v2.UniversalUpdater;
 import org.bstats.bukkit.Metrics;
@@ -13,6 +14,7 @@ import org.bstats.charts.DrilldownPie;
 import org.bstats.charts.SimplePie;
 
 import javax.annotation.Nonnull;
+import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -26,7 +28,6 @@ import java.util.logging.Level;
 public class GuizhanLib extends AbstractAddon {
 
     private final UniversalUpdater universalUpdater = new UniversalUpdater();
-
     private ConfigManager configManager;
     @Getter
     @Accessors(fluent = true)
@@ -36,7 +37,6 @@ public class GuizhanLib extends AbstractAddon {
         super("ybw0014", "GuizhanLibPlugin", "master", "auto-update");
 
         // a hacky way to check if mockbukkit is used
-        // TODO: change it when updating mockbukkit to v4
         isUnitTest = getClassLoader().getClass().getPackageName().startsWith("be.seeseemelk.mockbukkit");
     }
 
@@ -103,7 +103,7 @@ public class GuizhanLib extends AbstractAddon {
                 branch = "Insider";
             } else if (sfVersion.endsWith("-canary") || sfVersion.endsWith("-Beta")) {
                 branch = "Beta";
-            } else if (sfVersion.endsWith("-release") || sfVersion.startsWith("Build")) {
+            } else if (sfVersion.endsWith("-release")) {
                 branch = "Release";
             }
             outerMap.put(branch, innerMap);
