@@ -1,9 +1,10 @@
 package net.guizhanss.guizhanlib.minecraft.helper.attribute;
 
-import lombok.experimental.UtilityClass;
+import javax.annotation.Nonnull;
+
 import org.bukkit.attribute.Attribute;
 
-import javax.annotation.Nonnull;
+import lombok.experimental.UtilityClass;
 
 /**
  * @deprecated 请使用 {@link net.guizhanss.minecraft.guizhanlib.gugu.minecraft.helpers.attribute.AttributeHelper} 代替

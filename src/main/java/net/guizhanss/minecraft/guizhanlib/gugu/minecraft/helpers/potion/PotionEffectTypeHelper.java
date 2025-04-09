@@ -1,14 +1,16 @@
 package net.guizhanss.minecraft.guizhanlib.gugu.minecraft.helpers.potion;
 
+import javax.annotation.Nonnull;
+
+import org.bukkit.Registry;
+import org.bukkit.potion.PotionEffectType;
+
 import com.google.common.base.Preconditions;
+
 import lombok.experimental.UtilityClass;
 import net.guizhanss.guizhanlib.common.utils.StringUtil;
 import net.guizhanss.minecraft.guizhanlib.gugu.localization.MinecraftLocalization;
 import net.guizhanss.minecraft.guizhanlib.utils.NamespacedKeyUtils;
-import org.bukkit.Registry;
-import org.bukkit.potion.PotionEffectType;
-
-import javax.annotation.Nonnull;
 
 /**
  * {@link PotionEffectType} 中文名称获取

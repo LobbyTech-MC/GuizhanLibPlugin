@@ -1,10 +1,12 @@
 package net.guizhanss.minecraft.guizhanlib.updater.universal.v2;
 
-import net.guizhanss.guizhanlib.updater.UpdaterConfig;
-import org.bukkit.plugin.Plugin;
+import java.io.File;
 
 import javax.annotation.Nonnull;
-import java.io.File;
+
+import org.bukkit.plugin.Plugin;
+
+import net.guizhanss.guizhanlib.updater.UpdaterConfig;
 
 record UpdaterRecord(
     Plugin plugin,

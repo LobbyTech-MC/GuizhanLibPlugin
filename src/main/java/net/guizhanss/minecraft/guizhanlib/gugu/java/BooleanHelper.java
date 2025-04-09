@@ -1,8 +1,8 @@
 package net.guizhanss.minecraft.guizhanlib.gugu.java;
 
-import lombok.experimental.UtilityClass;
-
 import javax.annotation.Nonnull;
+
+import lombok.experimental.UtilityClass;
 
 /**
  * 布尔值({@link Boolean})助手

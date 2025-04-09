@@ -1,9 +1,10 @@
 package net.guizhanss.guizhanlib.minecraft.helper;
 
-import lombok.experimental.UtilityClass;
+import javax.annotation.Nonnull;
+
 import org.bukkit.DyeColor;
 
-import javax.annotation.Nonnull;
+import lombok.experimental.UtilityClass;
 
 /**
  * @deprecated 请使用 {@link net.guizhanss.minecraft.guizhanlib.gugu.minecraft.helpers.DyeColorHelper} 代替

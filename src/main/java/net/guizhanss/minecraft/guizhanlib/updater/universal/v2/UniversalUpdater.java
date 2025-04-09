@@ -1,13 +1,14 @@
 package net.guizhanss.minecraft.guizhanlib.updater.universal.v2;
 
-import lombok.Getter;
-import net.guizhanss.guizhanlib.updater.UpdaterConfig;
-import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
-import org.bukkit.plugin.Plugin;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.bukkit.plugin.Plugin;
+
+import lombok.Getter;
+import net.guizhanss.guizhanlib.updater.UpdaterConfig;
+import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
 
 /**
  * This is a universal updater. It will put all the updater tasks in a queue and execute them one by one.

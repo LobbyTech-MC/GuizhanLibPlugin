@@ -1,10 +1,10 @@
 package net.guizhanss.minecraft.guizhanlib.updater.universal.v2;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 /**
  * This class holds all available locations of Guizhan Builds.

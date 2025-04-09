@@ -1,11 +1,11 @@
 package net.guizhanss.minecraft.guizhanlib.config;
 
+import javax.annotation.Nonnull;
+
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import lombok.Getter;
 import net.guizhanss.guizhanlib.slimefun.addon.AddonConfig;
 import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
-
-import javax.annotation.Nonnull;
 
 /**
  * The configuration manager for the plugin.

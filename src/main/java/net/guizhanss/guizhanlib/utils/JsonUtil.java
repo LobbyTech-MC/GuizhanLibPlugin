@@ -1,14 +1,16 @@
 package net.guizhanss.guizhanlib.utils;
 
+import java.io.BufferedReader;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
-import lombok.experimental.UtilityClass;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import java.io.BufferedReader;
+import lombok.experimental.UtilityClass;
 
 /**
  * @deprecated 请使用 {@link net.guizhanss.guizhanlib.common.utils.JsonUtil} 代替

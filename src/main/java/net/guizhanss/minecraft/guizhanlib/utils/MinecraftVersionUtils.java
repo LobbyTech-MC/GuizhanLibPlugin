@@ -1,9 +1,9 @@
 package net.guizhanss.minecraft.guizhanlib.utils;
 
+import javax.annotation.Nonnull;
+
 import io.papermc.lib.PaperLib;
 import lombok.experimental.UtilityClass;
-
-import javax.annotation.Nonnull;
 
 /**
  * Minecraft version utilities.

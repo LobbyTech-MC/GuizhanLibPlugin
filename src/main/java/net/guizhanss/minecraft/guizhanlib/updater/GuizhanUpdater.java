@@ -1,12 +1,14 @@
 package net.guizhanss.minecraft.guizhanlib.updater;
 
+import java.io.File;
+
+import javax.annotation.ParametersAreNonnullByDefault;
+
+import org.bukkit.plugin.Plugin;
+
 import lombok.experimental.UtilityClass;
 import net.guizhanss.guizhanlib.updater.UpdaterConfig;
 import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
-import org.bukkit.plugin.Plugin;
-
-import javax.annotation.ParametersAreNonnullByDefault;
-import java.io.File;
 
 /**
  * The universal updater wrapper.

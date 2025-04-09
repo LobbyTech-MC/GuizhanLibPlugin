@@ -1,9 +1,9 @@
 package net.guizhanss.guizhanlib.utils;
 
-import lombok.experimental.UtilityClass;
-
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+
+import lombok.experimental.UtilityClass;
 
 /**
  * @deprecated 请使用 {@link net.guizhanss.guizhanlib.common.utils.StringUtil} 代替

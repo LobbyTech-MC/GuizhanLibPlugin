@@ -1,11 +1,13 @@
 package net.guizhanss.minecraft.guizhanlib.utils;
 
-import lombok.experimental.UtilityClass;
-import net.guizhanss.guizhanlib.common.utils.StringUtil;
-import org.bukkit.NamespacedKey;
+import java.util.Locale;
 
 import javax.annotation.Nonnull;
-import java.util.Locale;
+
+import org.bukkit.NamespacedKey;
+
+import lombok.experimental.UtilityClass;
+import net.guizhanss.guizhanlib.common.utils.StringUtil;
 
 /**
  * {@link NamespacedKey} utilities.

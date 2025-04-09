@@ -1,11 +1,5 @@
 package net.guizhanss.minecraft.guizhanlib.gugu.localization;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import io.papermc.lib.PaperLib;
-import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
-import net.guizhanss.minecraft.guizhanlib.utils.MinecraftVersionUtils;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,6 +18,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import io.papermc.lib.PaperLib;
+import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
+import net.guizhanss.minecraft.guizhanlib.utils.MinecraftVersionUtils;
 
 /**
  * 本地化文件加载器

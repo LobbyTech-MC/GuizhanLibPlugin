@@ -1,8 +1,8 @@
 package net.guizhanss.guizhanlib.java;
 
-import lombok.experimental.UtilityClass;
-
 import javax.annotation.Nonnull;
+
+import lombok.experimental.UtilityClass;
 
 /**
  * @deprecated 请使用 {@link net.guizhanss.minecraft.guizhanlib.gugu.java.BooleanHelper} 代替

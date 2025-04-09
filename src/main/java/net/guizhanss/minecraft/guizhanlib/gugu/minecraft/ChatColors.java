@@ -1,13 +1,15 @@
 package net.guizhanss.minecraft.guizhanlib.gugu.minecraft;
 
-import com.google.common.base.Preconditions;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import org.bukkit.ChatColor;
-
-import javax.annotation.Nonnull;
 import java.util.EnumMap;
 import java.util.Map;
+
+import javax.annotation.Nonnull;
+
+import org.bukkit.ChatColor;
+
+import com.google.common.base.Preconditions;
+
+import lombok.Getter;
 
 /**
  * 聊天颜色 {@link ChatColor}
@@ -17,7 +19,6 @@ import java.util.Map;
  */
 @SuppressWarnings({"ConstantConditions", "deprecation"})
 @Getter
-@RequiredArgsConstructor
 public enum ChatColors {
     /**
      * 天蓝色

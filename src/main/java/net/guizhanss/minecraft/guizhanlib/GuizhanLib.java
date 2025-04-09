@@ -1,5 +1,15 @@
 package net.guizhanss.minecraft.guizhanlib;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.logging.Level;
+
+import javax.annotation.Nonnull;
+
+import org.bstats.bukkit.Metrics;
+import org.bstats.charts.DrilldownPie;
+import org.bstats.charts.SimplePie;
+
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import lombok.Getter;
 import lombok.experimental.Accessors;
@@ -8,14 +18,6 @@ import net.guizhanss.minecraft.guizhanlib.config.ConfigManager;
 import net.guizhanss.minecraft.guizhanlib.gugu.localization.MinecraftLocalization;
 import net.guizhanss.minecraft.guizhanlib.updater.GuizhanUpdater;
 import net.guizhanss.minecraft.guizhanlib.updater.universal.v2.UniversalUpdater;
-import org.bstats.bukkit.Metrics;
-import org.bstats.charts.DrilldownPie;
-import org.bstats.charts.SimplePie;
-
-import javax.annotation.Nonnull;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.logging.Level;
 
 /**
  * GuizhanLib plugin version.

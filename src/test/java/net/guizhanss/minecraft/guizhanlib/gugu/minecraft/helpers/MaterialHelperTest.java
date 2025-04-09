@@ -1,14 +1,15 @@
 package net.guizhanss.minecraft.guizhanlib.gugu.minecraft.helpers;
 
-import be.seeseemelk.mockbukkit.MockBukkit;
-import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
+import java.util.logging.Level;
+
 import org.bukkit.Material;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.util.logging.Level;
+import be.seeseemelk.mockbukkit.MockBukkit;
+import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
 
 public class MaterialHelperTest {
 

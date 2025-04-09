@@ -1,11 +1,13 @@
 package net.guizhanss.guizhanlibplugin.updater;
 
-import lombok.experimental.UtilityClass;
-import net.guizhanss.guizhanlib.updater.UpdaterConfig;
-import org.bukkit.plugin.Plugin;
+import java.io.File;
 
 import javax.annotation.ParametersAreNonnullByDefault;
-import java.io.File;
+
+import org.bukkit.plugin.Plugin;
+
+import lombok.experimental.UtilityClass;
+import net.guizhanss.guizhanlib.updater.UpdaterConfig;
 
 /**
  * The universal updater wrapper.

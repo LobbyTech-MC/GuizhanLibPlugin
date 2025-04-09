@@ -1,8 +1,7 @@
 package net.guizhanss.minecraft.guizhanlib.gugu.minecraft.helpers.inventory;
 
-import be.seeseemelk.mockbukkit.MockBukkit;
-import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
-import net.guizhanss.minecraft.guizhanlib.gugu.minecraft.helpers.MaterialHelper;
+import java.util.logging.Level;
+
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.junit.jupiter.api.AfterAll;
@@ -10,7 +9,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.util.logging.Level;
+import be.seeseemelk.mockbukkit.MockBukkit;
+import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
+import net.guizhanss.minecraft.guizhanlib.gugu.minecraft.helpers.MaterialHelper;
 
 public class ItemStackHelperTest {
 

@@ -1,15 +1,5 @@
 package net.guizhanss.minecraft.guizhanlib.updater.universal.v2;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.reflect.TypeToken;
-import lombok.RequiredArgsConstructor;
-import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
-import org.bukkit.plugin.Plugin;
-
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
@@ -25,6 +15,19 @@ import java.text.MessageFormat;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+
+import org.bukkit.plugin.Plugin;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
+
+import lombok.RequiredArgsConstructor;
+import net.guizhanss.minecraft.guizhanlib.GuizhanLib;
 
 @RequiredArgsConstructor
 class UniversalUpdaterTask implements Runnable {

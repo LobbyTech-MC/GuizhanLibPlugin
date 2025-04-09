@@ -1,14 +1,17 @@
 package net.guizhanss.minecraft.guizhanlib.gugu.minecraft.helpers.entity;
 
-import com.google.common.base.Preconditions;
-import lombok.experimental.UtilityClass;
-import net.guizhanss.guizhanlib.common.utils.StringUtil;
+import java.util.Map;
+
+import javax.annotation.Nonnull;
+
 import org.bukkit.entity.Horse;
 import org.bukkit.entity.Horse.Color;
 import org.bukkit.entity.Horse.Style;
 
-import javax.annotation.Nonnull;
-import java.util.Map;
+import com.google.common.base.Preconditions;
+
+import lombok.experimental.UtilityClass;
+import net.guizhanss.guizhanlib.common.utils.StringUtil;
 
 /**
  * {@link Horse} 相关
