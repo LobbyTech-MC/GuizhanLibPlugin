@@ -1,12 +1,11 @@
 package net.guizhanss.minecraft.guizhanlib.gugu.localization;
 
-import java.util.Map;
+import com.google.common.base.Preconditions;
+import com.google.gson.Gson;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-
-import com.google.common.base.Preconditions;
-import com.google.gson.Gson;
+import java.util.Map;
 
 /**
  * Minecraft 本地化资源管理
